@@ -1,0 +1,171 @@
+/*Reset CSS*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: "ABeeZee", sans-serif;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+/*App e Container*/
+.app{
+    width: 100vw;
+    height: 100vh;
+    background-color: #1E1E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 120px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media(max-width: 800px){
+    .container{
+        padding: 0 90px;
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        padding: 0 70px;
+    }
+}
+
+@media(max-width: 500px){
+    .container{
+        padding: 0 50px;
+    }
+}
+
+@media(max-width: 400px){
+    .container{
+        padding: 0 30px;
+    }
+}
+/*Forms*/
+.title{
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 500;
+    color: #6979F8;
+    font-style: italic;
+    font-size: 22px;
+    position: relative;
+    margin-left: 12px;
+}
+.title:after{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 21px;
+    background-color: #6979F8;
+    left: -12px;
+    top: 2px;
+}
+.links{
+    font-family: "ABeeZee", sans-serif;
+    color: #6979F8;
+    font-style: italic;
+    font-size: 14px;
+    position: relative;
+}
+.links:hover{
+    color: #9ca7f6;
+}
+.links::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1.5px;
+    background-color: #6979F8;
+    left: 1px;
+    top: 18px;
+}
+.links:hover::after{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 1.5px;
+    background-color: #9ca7f6;
+    left: 1px;
+    top: 18px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px 0;
+}
+.input{
+    border: 1px solid #e4e4e491;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: transparent;
+    width: 300px;
+    color: #6979F8;
+}
+.btn{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 400;
+    color: white;
+    font-family: "ABeeZee", sans-serif;
+    font-style: italic;
+    background: #6979F8;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: .1s;
+}
+
+.btn:hover, .btn:focus{
+    outline: none;
+    box-shadow: 0 0 0 3px #8e9bfc, 0 0 0 4px #192aad;
+}
+
+/*Clientes*/
+.cliente{
+    width: 300px;
+    border: 1px solid #e4e4e491;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.cliente:first-child{
+    margin-top: 21px;
+}
+.nome{
+    color: white;
+    font-size: 14px;
+}
+.email{
+    color: #6979F8;
+    font-size: 14px;
+}
